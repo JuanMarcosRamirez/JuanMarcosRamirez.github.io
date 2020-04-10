@@ -38,6 +38,13 @@ li {
 }
 
 
+.pubitem{}
+
+.pubitem li{
+	text-align:justify;
+}
+
+
 .image_ppal {
 	font-family:'Roboto', sans-serif;
 	font-weight:bold;
