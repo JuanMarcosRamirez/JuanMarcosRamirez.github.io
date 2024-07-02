@@ -1,0 +1,10 @@
+@article{ramirez2023explainable,
+  title={Explainable machine learning for performance anomaly detection and classification in mobile networks},
+  author={Ram{\'\i}rez, Juan M and D{\'\i}ez, Fernando and Rojo, Pablo and Mancuso, Vincenzo and Fern{\'a}ndez-Anta, Antonio},
+  journal={Computer Communications},
+  volume={200},
+  pages={113--131},
+  year={2023},
+  doi={10.1016/j.comcom.2023.01.003},
+  publisher={Elsevier}
+}
