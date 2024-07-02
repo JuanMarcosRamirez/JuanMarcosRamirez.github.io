@@ -1,0 +1,11 @@
+@article{barajas2023compressive,
+  title={Compressive Spectral Video Sensing using the Convolutional Sparse Coding framework CSC4D},
+  author={Barajas-Solano, Crisostomo and Ramirez, Juan-Marcos and Torre, Jos{\'e} Ignacio Mart{\'\i}nez and Arguello, Henry},
+  journal={Journal of Visual Communication and Image Representation},
+  volume={92},
+  pages={103782},
+  year={2023},
+  doi={10.1016/j.jvcir.2023.103782},
+  publisher={Elsevier}
+}
+
