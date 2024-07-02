@@ -1,0 +1,10 @@
+@inproceedings{srivastava2024nowcasting,
+  title={Nowcasting Temporal Trends Using Indirect Surveys},
+  author={Srivastava, Ajitesh and Ramirez, Juan Marcos and D{\'\i}az-Aranda, Sergio and Aguilar, Jose and Anta, Antonio Fern{\'a}ndez and Ortega, Antonio and Lillo, Rosa Elvira},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={38},
+  number={20},
+  pages={22359--22367},
+  doi={10.1609/aaai.v38i20.30242},
+  year={2024}
+}
