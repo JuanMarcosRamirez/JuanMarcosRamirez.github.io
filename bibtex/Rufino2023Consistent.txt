@@ -4,7 +4,7 @@
   journal={International Journal of Medical Informatics},
   pages={105133},
   year={2023},
-  doi={10.1016/j.ijmedinf.2023.105133}
+  doi={10.1016/j.ijmedinf.2023.105133},
   publisher={Elsevier}
 }
 

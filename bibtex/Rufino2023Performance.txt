@@ -1,0 +1,10 @@
+@article{rufino2024performance,
+  title={Performance and explainability of feature selection-boosted tree-based classifiers for COVID-19 detection},
+  author={Rufino, Jes{\'u}s and Ram{\'\i}rez, Juan Marcos and Aguilar, Jose and Baquero, Carlos and Champati, Jaya and Frey, Davide and Lillo, Rosa Elvira and Fern{\'a}ndez-Anta, Antonio},
+  journal={Heliyon},
+  volume={10},
+  number={1},
+  year={2024},
+  doi={10.1016/j.heliyon.2023.e23219},
+  publisher={Elsevier}
+}
