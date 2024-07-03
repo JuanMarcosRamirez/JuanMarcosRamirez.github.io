@@ -1,0 +1,10 @@
+@article{monsalve2022covariance,
+  author={Monsalve, Jonathan and Ramirez, Juan and Esnaola, Iñaki and Arguello, Henry},
+  journal={IEEE Transactions on Image Processing}, 
+  title={Covariance Estimation From Compressive Data Partitions Using a Projected Gradient-Based Algorithm}, 
+  year={2022},
+  volume={31},
+  number={},
+  pages={4817-4827},
+  doi={10.1109/TIP.2022.3187285}}
+
