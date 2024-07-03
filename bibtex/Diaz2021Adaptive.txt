@@ -1,0 +1,9 @@
+@article{diaz2021adaptive,
+  author={Diaz, Nelson and Ramirez, Juan and Vera, Esteban and Arguello, Henry},
+  journal={IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing}, 
+  title={Adaptive Multisensor Acquisition via Spatial Contextual Information for Compressive Spectral Image Classification}, 
+  year={2021},
+  volume={14},
+  pages={9254-9266},
+  doi={10.1109/JSTARS.2021.3111508}
+  }
