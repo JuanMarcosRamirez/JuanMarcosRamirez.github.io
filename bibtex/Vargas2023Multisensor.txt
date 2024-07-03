@@ -1,0 +1,10 @@
+@article{vargas2023multisensor,
+  author={Vargas, Héctor and Ramírez, Juan and Pinilla, Samuel and Martínez Torre, José Ignacio},
+  journal={IEEE Journal of Selected Topics in Signal Processing}, 
+  title={Multi-Sensor Image Feature Fusion via Subspace-Based Approach Using $\ell _{1}$-Gradient Regularization}, 
+  year={2023},
+  volume={17},
+  number={2},
+  pages={525-537},
+  doi={10.1109/JSTSP.2022.3219357}}
+
