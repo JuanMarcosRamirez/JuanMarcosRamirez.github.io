@@ -1,0 +1,9 @@
+@article{barajas2020convolutional,
+  title={Convolutional sparse coding framework for compressive spectral imaging},
+  author={Barajas-Solano, Crisostomo and Ramirez, Juan-Marcos and Arguello, Henry},
+  journal={Journal of Visual Communication and Image Representation},
+  volume={66},
+  pages={102690},
+  year={2020},
+  publisher={Elsevier}
+}
