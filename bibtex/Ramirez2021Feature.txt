@@ -1,0 +1,10 @@
+@article{ramirez2021feature,
+  title={Feature fusion via dual-resolution compressive measurement matrix analysis for spectral image classification},
+  author={Ramirez, Juan Marcos and Torre, Jos{\'e} Ignacio Mart{\'\i}nez and Arguello, Henry},
+  journal={Signal processing: image communication},
+  volume={90},
+  pages={116014},
+  year={2021},
+  publisher={Elsevier}
+}
+
