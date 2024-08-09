@@ -1,0 +1,9 @@
+@inproceedings{Ramirez2022Cleaning,
+  author={Ramírez, Juan Marcos and Rojo, Pablo and Díez, Fernando and Mancuso, Vincenzo and Anta, Antonio Fernández},
+  booktitle={2022 20th Mediterranean Communication and Computer Networking Conference (MedComNet)}, 
+  title={Cleaning Matters! Preprocessing-enhanced Anomaly Detection and Classification in Mobile Networks}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={103-112},
+  doi={10.1109/MedComNet55087.2022.9810378}}

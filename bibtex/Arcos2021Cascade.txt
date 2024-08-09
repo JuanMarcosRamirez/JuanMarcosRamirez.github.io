@@ -1,0 +1,9 @@
+@inproceedings{Arcos2021Cascade,
+  author={Arcos, Christian and Bacca, Jorge and Ramírez, Juan M. and Arguello, Henry},
+  booktitle={2021 XXIII Symposium on Image, Signal Processing and Artificial Vision (STSIVA)}, 
+  title={Cascaded Convolutional Generator Networks For Solving Imaging Inverse Problems}, 
+  year={2021},
+  volume={},
+  number={},
+  pages={1-5},
+  doi={10.1109/STSIVA53688.2021.9591668}}
