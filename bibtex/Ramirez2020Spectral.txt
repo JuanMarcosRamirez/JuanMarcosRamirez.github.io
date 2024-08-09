@@ -1,0 +1,9 @@
+@article{Ramirez2020Spectral,
+  author={Ramirez, Juan Marcos and Arguello, Henry},
+  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
+  title={Spectral Image Classification From Multi-Sensor Compressive Measurements}, 
+  year={2020},
+  volume={58},
+  number={1},
+  pages={626-636},
+  doi={10.1109/TGRS.2019.2938724}}

@@ -1,0 +1,9 @@
+@article{Ramirez2010Multi,
+  author={Ramirez, Juan Marcos and Arguello, Henry},
+  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
+  title={Multiresolution Compressive Feature Fusion for Spectral Image Classification}, 
+  year={2019},
+  volume={57},
+  number={12},
+  pages={9900-9911},
+  doi={10.1109/TGRS.2019.2930093}}
