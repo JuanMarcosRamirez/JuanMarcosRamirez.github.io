@@ -1,0 +1,10 @@
+@article{vargas2020admm,
+  title={ADMM-based ℓ1- ℓ1 optimization algorithm for robust sparse channel estimation in OFDM systems},
+  author={Vargas, Hector and Ramirez, Juan and Arguello, Henry},
+  journal={Signal Processing},
+  volume={167},
+  pages={107296},
+  year={2020},
+  publisher={Elsevier}
+}
+
