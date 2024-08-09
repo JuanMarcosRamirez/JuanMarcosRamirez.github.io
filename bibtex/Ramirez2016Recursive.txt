@@ -1,0 +1,9 @@
+@article{Ramirez2016Recursive,
+  author={Ramirez, Juan Marcos and Paredes, Jose Luis},
+  journal={IEEE Transactions on Signal Processing}, 
+  title={Recursive Weighted Myriad Based Filters and Their Optimizations}, 
+  year={2016},
+  volume={64},
+  number={15},
+  pages={4027-4039},
+  doi={10.1109/TSP.2016.2557304}}

@@ -1,0 +1,9 @@
+@article{ramirez2017recursive,
+  title={Recursive myriad-mean filters: Adaptive algorithms and applications},
+  author={Ramirez, Juan Marcos and Paredes, Jose Luis},
+  journal={Signal Processing},
+  volume={139},
+  pages={12--24},
+  year={2017},
+  publisher={Elsevier}
+}
