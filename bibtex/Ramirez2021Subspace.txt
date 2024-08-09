@@ -1,0 +1,9 @@
+@inproceedings{Ramirez2021Subspace,
+  author={Ramírez, Juan and Vargas, Héctor and Martinez, José Ignacio and Arguello, Henry},
+  booktitle={2021 IEEE International Geoscience and Remote Sensing Symposium IGARSS}, 
+  title={Subspace-Based Feature Fusion from Hyperspectral and Multispectral Images for Land Cover Classification}, 
+  year={2021},
+  volume={},
+  number={},
+  pages={3003-3006},
+  doi={10.1109/IGARSS47720.2021.9554465}}
