@@ -1,0 +1,9 @@
+@article{Ramirez2015Robust,
+  author={Ramirez, Juan Marcos and Paredes, Jose Luis},
+  journal={IEEE Signal Processing Letters}, 
+  title={Robust Transforms Based on the Weighted Median Operator}, 
+  year={2015},
+  volume={22},
+  number={1},
+  pages={120-124},
+  doi={10.1109/LSP.2014.2349351}}
