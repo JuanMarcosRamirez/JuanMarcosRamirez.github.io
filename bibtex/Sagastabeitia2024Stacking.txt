@@ -1,4 +1,4 @@
-@inproceedings{10611848,
+@inproceedings{Sagas2024Stacking,
   author={Sagastabeitia, Gontzal and Doncel, Josu and Anta, Antonio Fernández and Aguilar, Jose and Ramirez, Juan Marcos},
   booktitle={2024 IEEE Congress on Evolutionary Computation (CEC)}, 
   title={A Stacking Ensemble Machine Learning Strategy for COVID-19 Seroprevalence Estimations in the USA Based on Genetic Programming}, 
