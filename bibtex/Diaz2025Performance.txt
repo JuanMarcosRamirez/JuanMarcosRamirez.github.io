@@ -1,0 +1,12 @@
+@article{Diaz2025Performance,
+author = {Sergio Díaz-Aranda and Jose Aguilar and Juan Marcos Ramírez and David Rabanedo and Antonio Fernández Anta and Rosa E. Lillo and},
+title = {Performance Analysis of NSUM Estimators in Social-Network Topologies},
+journal = {The American Statistician},
+volume = {79},
+number = {2},
+pages = {247--264},
+year = {2025},
+publisher = {ASA Website},
+doi = {10.1080/00031305.2024.2421361}
+}
+
