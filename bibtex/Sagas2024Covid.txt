@@ -1,0 +1,9 @@
+@article{sagastabeitia2024covid,
+  title={COVID-19 seroprevalence estimation and forecasting in the USA from ensemble machine learning models using a stacking strategy},
+  author={Sagastabeitia, Gontzal and Doncel, Josu and Aguilar, Jos{\'e} and Anta, Antonio Fern{\'a}ndez and Ram{\'\i}rez, Juan Marcos},
+  journal={Expert Systems with Applications},
+  volume={258},
+  pages={124930},
+  year={2024},
+  publisher={Elsevier}
+}
