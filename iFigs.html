@@ -106,10 +106,10 @@ code {
 
   <p>\begin{document}</p>
   
-  <p>\begin{figure}[hb]</p><br>
-\begin{center}</p><br>
-\begin{tabular}{c c}</p><br>
-\hspace{-10pt}</p><br>
+  <p>\begin{figure}[hb]<br>
+\begin{center}<br>
+\begin{tabular}{c c}<br>
+\hspace{-10pt}</p>
 <p1>\begin{minipage}{.50\linewidth}</p1><br>
 <p1>\begin{tikzpicture}</p1><br>
 <p2>\begin{axis}[</p2><br>
@@ -124,7 +124,7 @@ code {
         <p2>]</p2><br>
         <p2>\addplot[ybar,bar width=4,fill=white!20,opacity=0.5] table[x ={y},y = x]{FigData/MSS_histogram.txt};</p2><br>
         <p2>\addplot[smooth, thick, line width=1.00pt] table[x ={x},y = y]{FigData/MSS_kde.txt};</p2><br>
-        <p2>\end{axis}</p2>
+        <p2>\end{axis}</p2><br>
     <p1>\end{tikzpicture}</p1><br>
 <p1>\end{minipage}</p1><br>
 <p>&</p><br>
