@@ -1,0 +1,9 @@
+@article{benito2024explainability,
+  title={Explainability analysis: An in-depth comparison between Fuzzy Cognitive Maps and LAMDA},
+  author={Benito, Diego and Quintero, Carlos and Aguilar, Jose and Ram{\'\i}rez, Juan Marcos and Fern{\'a}ndez-Anta, Antonio},
+  journal={Applied Soft Computing},
+  volume={164},
+  pages={111940},
+  year={2024},
+  publisher={Elsevier}
+}
