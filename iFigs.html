@@ -109,18 +109,18 @@ code {
   <p>\begin{figure}[hb]<br>
 \begin{center}<br>
 \begin{tabular}{c c}<br>
-\hspace{-10pt}</p><br/>
+\hspace{-10pt}</p>
 <p1>\begin{minipage}{.50\linewidth}</p1><br>
 <p1>\begin{tikzpicture}</p1>
-        <p2>\begin{axis}[</p2>
-            <p3> width=\textwidth,<br>
-            ylabel = \footnotesize \texttt{Density},<br>
-            ylabel style = {yshift=-0.1cm},<br>
-            xlabel = \footnotesize \texttt{(a) MSS (bytes)},<br>
-            xlabel style = {yshift=0.1cm},<br>
-            ymin=0,<br>
-            ticklabel style = {font=\scriptsize},<br>
-            ytick ={0,1e-2},</p3>
+<p2>\begin{axis}[</p2><br>
+<p3> width=\textwidth,<br></p3>
+            <p3>ylabel = \footnotesize \texttt{Density},</p3><br>
+            <p3>ylabel style = {yshift=-0.1cm},</p3><br>
+            <p3>xlabel = \footnotesize \texttt{(a) MSS (bytes)},</p3><br>
+            <p3>xlabel style = {yshift=0.1cm},</p3><br>
+            <p3>ymin=0,</p3><br>
+            <p3>ticklabel style = {font=\scriptsize},</p3><br>
+            <p3>ytick ={0,1e-2},</p3>
         <p2>]<br>
         \addplot[ybar,bar width=4,fill=white!20,opacity=0.5] table[x ={y},y = x]{FigData/MSS_histogram.txt};<br>
         \addplot[smooth, thick, line width=1.00pt] table[x ={x},y = y]{FigData/MSS_kde.txt};<br>
