@@ -1,0 +1,9 @@
+@article{bacca2025middle,
+  title={Middle-output deep image prior for blind hyperspectral and multispectral image fusion},
+  author={Bacca, Jorge and Arcos, Christian and Ram{\'\i}rez, Juan Marcos and Arguello, Henry},
+  journal={Signal Processing: Image Communication},
+  volume={132},
+  pages={117247},
+  year={2025},
+  publisher={Elsevier}
+}
