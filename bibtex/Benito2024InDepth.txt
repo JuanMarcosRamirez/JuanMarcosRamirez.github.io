@@ -1,0 +1,10 @@
+@article{Benito2024InDepth,
+  author={Benito, Diego Javier and Robles, Jesús Rufino and Ramírez, Juan and Anta, Antonio Fernández and Aguilar, Jose},
+  journal={IEEE Access}, 
+  title={An In-Depth Analysis of COVID-19 Symptoms Considering the Co-Occurrence of Symptoms Using Clustering Algorithms}, 
+  year={2024},
+  volume={12},
+  number={},
+  pages={127792-127804},
+  keywords={COVID-19;Indexes;Pandemics;Surveys;Social networking (online);Pain;Medical diagnostic imaging;COVID-19 symptoms;symptomatic patterns;machine learning;clustering algorithms},
+  doi={10.1109/ACCESS.2024.3456246}}
