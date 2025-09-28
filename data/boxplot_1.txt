@@ -1,0 +1,774 @@
+\begin{figure}[hb]
+  \definecolor{mycolor1}{rgb}{0.00000,0.44700,0.74100}
+  \definecolor{mycolor2}{rgb}{0.85000,0.32500,0.09800}
+  \definecolor{mycolor3}{rgb}{0.92900,0.69400,0.12500}
+  \definecolor{mycolor4}{rgb}{0.4666,0.67451,0.18824}
+  \definecolor{mycolor5}{rgb}{0.49412,0.18431,0.30588}
+  \definecolor{mycolor6}{rgb}{0.30196,0.69020,0.93333}
+
+  \resizebox{1.00\textwidth}{!}{%
+    \begin{tabular}{ccccc}
+      \begin{minipage}{\linewidth}
+        \resizebox{1.00\textwidth}{!}{%
+          \begin{tikzpicture}
+            \begin{axis}[
+              scale=0.65,
+              grid=major,
+              title=\text{\Large $\rho=1\%$},
+              ylabel=\text{\Large $\hat{\rho}$},
+              boxplot/draw direction=y,
+              boxplot={
+                draw position={1/4 + floor(\plotnumofactualtype/2) + 1/2*mod(\plotnumofactualtype,2)},
+                box extend=0.25
+              },
+              legend style={
+                cells={anchor=west},
+                legend image code/.code={\draw[#1] (0cm,-0.1cm) -- (0.3cm,-0.1cm);}
+              },
+              xtick={0.25,0.75,1.25,1.75,2.25,2.75,3.25,3.75,4.25},
+              xticklabels={%
+                {MoR},%
+                {MoR-Median},%
+                {MoR-TM10},%
+                {MoR-HQ1},%
+                {MoR-HQ2},%
+                {MoR-HSK2},%
+                {MoR-HSK5},%
+                {MoR-Huber},%
+                {MoR-Myriad}%
+              },
+              x tick label style={rotate=90},
+              yticklabel style={
+                /pgf/number format/fixed,
+                /pgf/number format/precision=3,
+                /pgf/number format/fixed zerofill
+              },
+              scaled y ticks=false,
+              ticklabel style={font=\large}
+            ]
+
+              \draw[dashed, line width=2pt, black]
+                (axis cs:0,1.02) --
+                (axis cs:50,1.02)
+                node[pos=1, anchor=west, font=\large]{\textcolor{red}{Reference}};
+
+              \draw[dashed, line width=3pt, black]
+                (axis cs:0,0.01) --
+                (axis cs:50,0.01)
+                node[pos=1, anchor=west, font=\large]{\textcolor{red}{Reference}};
+
+              \node[anchor=south west, font=\large] at (axis cs:4,1.02) {\textbf{\LARGE $\epsilon = 2\%$}};
+              \node[anchor=south west, font=\large] at (axis cs:4,1.05) {\textbf{\LARGE $\epsilon = 5\%$}};
+
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=MoR]{boxplots/boxplot_erdos_renyi_md50rho_1_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=Median]{boxplots/boxplot_erdos_renyi_md50rho_1_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=TM.10]{boxplots/boxplot_erdos_renyi_md50rho_1_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=HQ1]{boxplots/boxplot_erdos_renyi_md50rho_1_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=HQ2]{boxplots/boxplot_erdos_renyi_md50rho_1_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=HSK2]{boxplots/boxplot_erdos_renyi_md50rho_1_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=HSK5]{boxplots/boxplot_erdos_renyi_md50rho_1_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=Huber]{boxplots/boxplot_erdos_renyi_md50rho_1_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=Myriad]{boxplots/boxplot_erdos_renyi_md50rho_1_no_noise.dat};
+
+            \end{axis}
+          \end{tikzpicture}%
+        }
+      \end{minipage}
+      &
+      \begin{minipage}{\linewidth}
+        \resizebox{1.00\textwidth}{!}{%
+          \begin{tikzpicture}
+            \begin{axis}[
+              scale=0.65,
+              grid=major,
+              title=\text{\Large $\rho=2\%$},
+              ylabel=\text{\Large $\hat{\rho}$},
+              boxplot/draw direction=y,
+              boxplot={
+                draw position={1/4 + floor(\plotnumofactualtype/2) + 1/2*mod(\plotnumofactualtype,2)},
+                box extend=0.25
+              },
+              legend style={
+                cells={anchor=west},
+                legend image code/.code={\draw[#1] (0cm,-0.1cm) -- (0.3cm,-0.1cm);}
+              },
+              xtick={0.25,0.75,1.25,1.75,2.25,2.75,3.25,3.75,4.25},
+              xticklabels={%
+                {MoR},%
+                {MoR-Median},%
+                {MoR-TM10},%
+                {MoR-HQ1},%
+                {MoR-HQ2},%
+                {MoR-HSK2},%
+                {MoR-HSK5},%
+                {MoR-Huber},%
+                {MoR-Myriad}%
+              },
+              x tick label style={rotate=90},
+              yticklabel style={
+                /pgf/number format/fixed,
+                /pgf/number format/precision=3,
+                /pgf/number format/fixed zerofill
+              },
+              scaled y ticks=false,
+              ticklabel style={font=\large}
+            ]
+
+              \draw[dashed, line width=2pt, black]
+                (axis cs:0,1.02) --
+                (axis cs:50,1.02)
+                node[pos=1, anchor=west, font=\large]{\textcolor{red}{Reference}};
+
+              \draw[dashed, line width=3pt, black]
+                (axis cs:0,0.02) --
+                (axis cs:50,0.02)
+                node[pos=1, anchor=west, font=\large]{\textcolor{red}{Reference}};
+
+              \node[anchor=south west, font=\large] at (axis cs:4,1.02) {\textbf{\LARGE $\epsilon = 2\%$}};
+              \node[anchor=south west, font=\large] at (axis cs:4,1.05) {\textbf{\LARGE $\epsilon = 5\%$}};
+
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=MoR]{boxplots/boxplot_erdos_renyi_md50rho_2_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=Median]{boxplots/boxplot_erdos_renyi_md50rho_2_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=TM.10]{boxplots/boxplot_erdos_renyi_md50rho_2_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=HQ1]{boxplots/boxplot_erdos_renyi_md50rho_2_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=HQ2]{boxplots/boxplot_erdos_renyi_md50rho_2_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=HSK2]{boxplots/boxplot_erdos_renyi_md50rho_2_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=HSK5]{boxplots/boxplot_erdos_renyi_md50rho_2_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=Huber]{boxplots/boxplot_erdos_renyi_md50rho_2_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=Myriad]{boxplots/boxplot_erdos_renyi_md50rho_2_no_noise.dat};
+
+            \end{axis}
+          \end{tikzpicture}%
+        }
+      \end{minipage}
+      &
+      \begin{minipage}{\linewidth}
+        \resizebox{1.00\textwidth}{!}{%
+          \begin{tikzpicture}
+            \begin{axis}[
+              scale=0.65,
+              grid=major,
+              title=\text{\Large $\rho=3\%$},
+              ylabel=\text{\Large $\hat{\rho}$},
+              boxplot/draw direction=y,
+              boxplot={
+                draw position={1/4 + floor(\plotnumofactualtype/2) + 1/2*mod(\plotnumofactualtype,2)},
+                box extend=0.25
+              },
+              legend style={
+                cells={anchor=west},
+                legend image code/.code={\draw[#1] (0cm,-0.1cm) -- (0.3cm,-0.1cm);}
+              },
+              xtick={0.25,0.75,1.25,1.75,2.25,2.75,3.25,3.75,4.25},
+              xticklabels={%
+                {MoR},%
+                {MoR-Median},%
+                {MoR-TM10},%
+                {MoR-HQ1},%
+                {MoR-HQ2},%
+                {MoR-HSK2},%
+                {MoR-HSK5},%
+                {MoR-Huber},%
+                {MoR-Myriad}%
+              },
+              x tick label style={rotate=90},
+              yticklabel style={
+                /pgf/number format/fixed,
+                /pgf/number format/precision=3,
+                /pgf/number format/fixed zerofill
+              },
+              scaled y ticks=false,
+              ticklabel style={font=\large}
+            ]
+
+              \draw[dashed, line width=2pt, black]
+                (axis cs:0,1.02) --
+                (axis cs:50,1.02)
+                node[pos=1, anchor=west, font=\large]{\textcolor{red}{Reference}};
+
+              \draw[dashed, line width=3pt, black]
+                (axis cs:0,0.03) --
+                (axis cs:50,0.03)
+                node[pos=1, anchor=west, font=\large]{\textcolor{red}{Reference}};
+
+              \node[anchor=south west, font=\large] at (axis cs:4,1.02) {\textbf{\LARGE $\epsilon = 2\%$}};
+              \node[anchor=south west, font=\large] at (axis cs:4,1.05) {\textbf{\LARGE $\epsilon = 5\%$}};
+
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=MoR]{boxplots/boxplot_erdos_renyi_md50rho_3_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=Median]{boxplots/boxplot_erdos_renyi_md50rho_3_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=TM.10]{boxplots/boxplot_erdos_renyi_md50rho_3_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=HQ1]{boxplots/boxplot_erdos_renyi_md50rho_3_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=HQ2]{boxplots/boxplot_erdos_renyi_md50rho_3_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=HSK2]{boxplots/boxplot_erdos_renyi_md50rho_3_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=HSK5]{boxplots/boxplot_erdos_renyi_md50rho_3_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=Huber]{boxplots/boxplot_erdos_renyi_md50rho_3_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=Myriad]{boxplots/boxplot_erdos_renyi_md50rho_3_no_noise.dat};
+
+            \end{axis}
+          \end{tikzpicture}%
+        }
+      \end{minipage}
+      &
+      \begin{minipage}{\linewidth}
+        \resizebox{1.00\textwidth}{!}{%
+          \begin{tikzpicture}
+            \begin{axis}[
+              scale=0.65,
+              grid=major,
+              title=\text{\Large $\rho=4\%$},
+              ylabel=\text{\Large $\hat{\rho}$},
+              boxplot/draw direction=y,
+              boxplot={
+                draw position={1/4 + floor(\plotnumofactualtype/2) + 1/2*mod(\plotnumofactualtype,2)},
+                box extend=0.25
+              },
+              legend style={
+                cells={anchor=west},
+                legend image code/.code={\draw[#1] (0cm,-0.1cm) -- (0.3cm,-0.1cm);}
+              },
+              xtick={0.25,0.75,1.25,1.75,2.25,2.75,3.25,3.75,4.25},
+              xticklabels={%
+                {MoR},%
+                {MoR-Median},%
+                {MoR-TM10},%
+                {MoR-HQ1},%
+                {MoR-HQ2},%
+                {MoR-HSK2},%
+                {MoR-HSK5},%
+                {MoR-Huber},%
+                {MoR-Myriad}%
+              },
+              x tick label style={rotate=90},
+              yticklabel style={
+                /pgf/number format/fixed,
+                /pgf/number format/precision=3,
+                /pgf/number format/fixed zerofill
+              },
+              scaled y ticks=false,
+              ticklabel style={font=\large}
+            ]
+
+              \draw[dashed, line width=2pt, black]
+                (axis cs:0,1.02) --
+                (axis cs:50,1.02)
+                node[pos=1, anchor=west, font=\large]{\textcolor{red}{Reference}};
+
+              \draw[dashed, line width=3pt, black]
+                (axis cs:0,0.04) --
+                (axis cs:50,0.04)
+                node[pos=1, anchor=west, font=\large]{\textcolor{red}{Reference}};
+
+              \node[anchor=south west, font=\large] at (axis cs:4,1.02) {\textbf{\LARGE $\epsilon = 2\%$}};
+              \node[anchor=south west, font=\large] at (axis cs:4,1.05) {\textbf{\LARGE $\epsilon = 5\%$}};
+
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=MoR]{boxplots/boxplot_erdos_renyi_md50rho_4_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=Median]{boxplots/boxplot_erdos_renyi_md50rho_4_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=TM.10]{boxplots/boxplot_erdos_renyi_md50rho_4_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=HQ1]{boxplots/boxplot_erdos_renyi_md50rho_4_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=HQ2]{boxplots/boxplot_erdos_renyi_md50rho_4_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=HSK2]{boxplots/boxplot_erdos_renyi_md50rho_4_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=HSK5]{boxplots/boxplot_erdos_renyi_md50rho_4_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=Huber]{boxplots/boxplot_erdos_renyi_md50rho_4_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=Myriad]{boxplots/boxplot_erdos_renyi_md50rho_4_no_noise.dat};
+
+            \end{axis}
+          \end{tikzpicture}%
+        }
+      \end{minipage}
+      &
+      \begin{minipage}{\linewidth}
+        \resizebox{1.00\textwidth}{!}{%
+          \begin{tikzpicture}
+            \begin{axis}[
+              scale=0.65,
+              grid=major,
+              title=\text{\Large $\rho=5\%$},
+              ylabel=\text{\Large $\hat{\rho}$},
+              boxplot/draw direction=y,
+              boxplot={
+                draw position={1/4 + floor(\plotnumofactualtype/2) + 1/2*mod(\plotnumofactualtype,2)},
+                box extend=0.25
+              },
+              legend style={
+                cells={anchor=west},
+                legend image code/.code={\draw[#1] (0cm,-0.1cm) -- (0.3cm,-0.1cm);}
+              },
+              xtick={0.25,0.75,1.25,1.75,2.25,2.75,3.25,3.75,4.25},
+              xticklabels={%
+                {MoR},%
+                {MoR-Median},%
+                {MoR-TM10},%
+                {MoR-HQ1},%
+                {MoR-HQ2},%
+                {MoR-HSK2},%
+                {MoR-HSK5},%
+                {MoR-Huber},%
+                {MoR-Myriad}%
+              },
+              x tick label style={rotate=90},
+              yticklabel style={
+                /pgf/number format/fixed,
+                /pgf/number format/precision=3,
+                /pgf/number format/fixed zerofill
+              },
+              scaled y ticks=false,
+              ticklabel style={font=\large}
+            ]
+
+              \draw[dashed, line width=2pt, black]
+                (axis cs:0,1.02) --
+                (axis cs:50,1.02)
+                node[pos=1, anchor=west, font=\large]{\textcolor{red}{Reference}};
+
+              \draw[dashed, line width=3pt, black]
+                (axis cs:0,0.05) --
+                (axis cs:50,0.05)
+                node[pos=1, anchor=west, font=\large]{\textcolor{red}{Reference}};
+
+              \node[anchor=south west, font=\large] at (axis cs:4,1.02) {\textbf{\LARGE $\epsilon = 2\%$}};
+              \node[anchor=south west, font=\large] at (axis cs:4,1.05) {\textbf{\LARGE $\epsilon = 5\%$}};
+
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=MoR]{boxplots/boxplot_erdos_renyi_md50rho_5_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=Median]{boxplots/boxplot_erdos_renyi_md50rho_5_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=TM.10]{boxplots/boxplot_erdos_renyi_md50rho_5_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=HQ1]{boxplots/boxplot_erdos_renyi_md50rho_5_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=HQ2]{boxplots/boxplot_erdos_renyi_md50rho_5_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=HSK2]{boxplots/boxplot_erdos_renyi_md50rho_5_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=HSK5]{boxplots/boxplot_erdos_renyi_md50rho_5_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=Huber]{boxplots/boxplot_erdos_renyi_md50rho_5_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=Myriad]{boxplots/boxplot_erdos_renyi_md50rho_5_no_noise.dat};
+
+            \end{axis}
+          \end{tikzpicture}%
+        }
+      \end{minipage}
+      \\
+      \begin{minipage}{\linewidth}
+        \resizebox{1.00\textwidth}{!}{%
+          \begin{tikzpicture}
+            \begin{axis}[
+              scale=0.65,
+              grid=major,
+              title=\text{\Large $\rho=6\%$},
+              ylabel=\text{\Large $\hat{\rho}$},
+              boxplot/draw direction=y,
+              boxplot={
+                draw position={1/4 + floor(\plotnumofactualtype/2) + 1/2*mod(\plotnumofactualtype,2)},
+                box extend=0.25
+              },
+              legend style={
+                cells={anchor=west},
+                legend image code/.code={\draw[#1] (0cm,-0.1cm) -- (0.3cm,-0.1cm);}
+              },
+              xtick={0.25,0.75,1.25,1.75,2.25,2.75,3.25,3.75,4.25},
+              xticklabels={%
+                {MoR},%
+                {MoR-Median},%
+                {MoR-TM10},%
+                {MoR-HQ1},%
+                {MoR-HQ2},%
+                {MoR-HSK2},%
+                {MoR-HSK5},%
+                {MoR-Huber},%
+                {MoR-Myriad}%
+              },
+              x tick label style={rotate=90},
+              yticklabel style={
+                /pgf/number format/fixed,
+                /pgf/number format/precision=3,
+                /pgf/number format/fixed zerofill
+              },
+              scaled y ticks=false,
+              ticklabel style={font=\large}
+            ]
+
+              \draw[dashed, line width=2pt, black]
+                (axis cs:0,1.02) --
+                (axis cs:50,1.02)
+                node[pos=1, anchor=west, font=\large]{\textcolor{red}{Reference}};
+
+              \draw[dashed, line width=3pt, black]
+                (axis cs:0,0.06) --
+                (axis cs:50,0.06)
+                node[pos=1, anchor=west, font=\large]{\textcolor{red}{Reference}};
+
+              \node[anchor=south west, font=\large] at (axis cs:4,1.02) {\textbf{\LARGE $\epsilon = 2\%$}};
+              \node[anchor=south west, font=\large] at (axis cs:4,1.05) {\textbf{\LARGE $\epsilon = 5\%$}};
+
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=MoR]{boxplots/boxplot_erdos_renyi_md50rho_6_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=Median]{boxplots/boxplot_erdos_renyi_md50rho_6_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=TM.10]{boxplots/boxplot_erdos_renyi_md50rho_6_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=HQ1]{boxplots/boxplot_erdos_renyi_md50rho_6_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=HQ2]{boxplots/boxplot_erdos_renyi_md50rho_6_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=HSK2]{boxplots/boxplot_erdos_renyi_md50rho_6_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=HSK5]{boxplots/boxplot_erdos_renyi_md50rho_6_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=Huber]{boxplots/boxplot_erdos_renyi_md50rho_6_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=Myriad]{boxplots/boxplot_erdos_renyi_md50rho_6_no_noise.dat};
+
+            \end{axis}
+          \end{tikzpicture}%
+        }
+      \end{minipage}
+      &
+      \begin{minipage}{\linewidth}
+        \resizebox{1.00\textwidth}{!}{%
+          \begin{tikzpicture}
+            \begin{axis}[
+              scale=0.65,
+              grid=major,
+              title=\text{\Large $\rho=7\%$},
+              ylabel=\text{\Large $\hat{\rho}$},
+              boxplot/draw direction=y,
+              boxplot={
+                draw position={1/4 + floor(\plotnumofactualtype/2) + 1/2*mod(\plotnumofactualtype,2)},
+                box extend=0.25
+              },
+              legend style={
+                cells={anchor=west},
+                legend image code/.code={\draw[#1] (0cm,-0.1cm) -- (0.3cm,-0.1cm);}
+              },
+              xtick={0.25,0.75,1.25,1.75,2.25,2.75,3.25,3.75,4.25},
+              xticklabels={%
+                {MoR},%
+                {MoR-Median},%
+                {MoR-TM10},%
+                {MoR-HQ1},%
+                {MoR-HQ2},%
+                {MoR-HSK2},%
+                {MoR-HSK5},%
+                {MoR-Huber},%
+                {MoR-Myriad}%
+              },
+              x tick label style={rotate=90},
+              yticklabel style={
+                /pgf/number format/fixed,
+                /pgf/number format/precision=3,
+                /pgf/number format/fixed zerofill
+              },
+              scaled y ticks=false,
+              ticklabel style={font=\large}
+            ]
+
+              \draw[dashed, line width=2pt, black]
+                (axis cs:0,1.02) --
+                (axis cs:50,1.02)
+                node[pos=1, anchor=west, font=\large]{\textcolor{red}{Reference}};
+
+              \draw[dashed, line width=3pt, black]
+                (axis cs:0,0.07) --
+                (axis cs:50,0.07)
+                node[pos=1, anchor=west, font=\large]{\textcolor{red}{Reference}};
+
+              \node[anchor=south west, font=\large] at (axis cs:4,1.02) {\textbf{\LARGE $\epsilon = 2\%$}};
+              \node[anchor=south west, font=\large] at (axis cs:4,1.05) {\textbf{\LARGE $\epsilon = 5\%$}};
+
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=MoR]{boxplots/boxplot_erdos_renyi_md50rho_7_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=Median]{boxplots/boxplot_erdos_renyi_md50rho_7_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=TM.10]{boxplots/boxplot_erdos_renyi_md50rho_7_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=HQ1]{boxplots/boxplot_erdos_renyi_md50rho_7_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=HQ2]{boxplots/boxplot_erdos_renyi_md50rho_7_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=HSK2]{boxplots/boxplot_erdos_renyi_md50rho_7_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=HSK5]{boxplots/boxplot_erdos_renyi_md50rho_7_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=Huber]{boxplots/boxplot_erdos_renyi_md50rho_7_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=Myriad]{boxplots/boxplot_erdos_renyi_md50rho_7_no_noise.dat};
+
+            \end{axis}
+          \end{tikzpicture}%
+        }
+      \end{minipage}
+      &
+      \begin{minipage}{\linewidth}
+        \resizebox{1.00\textwidth}{!}{%
+          \begin{tikzpicture}
+            \begin{axis}[
+              scale=0.65,
+              grid=major,
+              title=\text{\Large $\rho=8\%$},
+              ylabel=\text{\Large $\hat{\rho}$},
+              boxplot/draw direction=y,
+              boxplot={
+                draw position={1/4 + floor(\plotnumofactualtype/2) + 1/2*mod(\plotnumofactualtype,2)},
+                box extend=0.25
+              },
+              legend style={
+                cells={anchor=west},
+                legend image code/.code={\draw[#1] (0cm,-0.1cm) -- (0.3cm,-0.1cm);}
+              },
+              xtick={0.25,0.75,1.25,1.75,2.25,2.75,3.25,3.75,4.25},
+              xticklabels={%
+                {MoR},%
+                {MoR-Median},%
+                {MoR-TM10},%
+                {MoR-HQ1},%
+                {MoR-HQ2},%
+                {MoR-HSK2},%
+                {MoR-HSK5},%
+                {MoR-Huber},%
+                {MoR-Myriad}%
+              },
+              x tick label style={rotate=90},
+              yticklabel style={
+                /pgf/number format/fixed,
+                /pgf/number format/precision=3,
+                /pgf/number format/fixed zerofill
+              },
+              scaled y ticks=false,
+              ticklabel style={font=\large}
+            ]
+
+              \draw[dashed, line width=2pt, black]
+                (axis cs:0,1.02) --
+                (axis cs:50,1.02)
+                node[pos=1, anchor=west, font=\large]{\textcolor{red}{Reference}};
+
+              \draw[dashed, line width=3pt, black]
+                (axis cs:0,0.08) --
+                (axis cs:50,0.08)
+                node[pos=1, anchor=west, font=\large]{\textcolor{red}{Reference}};
+
+              \node[anchor=south west, font=\large] at (axis cs:4,1.02) {\textbf{\LARGE $\epsilon = 2\%$}};
+              \node[anchor=south west, font=\large] at (axis cs:4,1.05) {\textbf{\LARGE $\epsilon = 5\%$}};
+
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=MoR]{boxplots/boxplot_erdos_renyi_md50rho_8_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=Median]{boxplots/boxplot_erdos_renyi_md50rho_8_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=TM.10]{boxplots/boxplot_erdos_renyi_md50rho_8_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=HQ1]{boxplots/boxplot_erdos_renyi_md50rho_8_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=HQ2]{boxplots/boxplot_erdos_renyi_md50rho_8_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=HSK2]{boxplots/boxplot_erdos_renyi_md50rho_8_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=HSK5]{boxplots/boxplot_erdos_renyi_md50rho_8_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=Huber]{boxplots/boxplot_erdos_renyi_md50rho_8_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=Myriad]{boxplots/boxplot_erdos_renyi_md50rho_8_no_noise.dat};
+
+            \end{axis}
+          \end{tikzpicture}%
+        }
+      \end{minipage}
+      &
+      \begin{minipage}{\linewidth}
+        \resizebox{1.00\textwidth}{!}{%
+          \begin{tikzpicture}
+            \begin{axis}[
+              scale=0.65,
+              grid=major,
+              title=\text{\Large $\rho=9\%$},
+              ylabel=\text{\Large $\hat{\rho}$},
+              boxplot/draw direction=y,
+              boxplot={
+                draw position={1/4 + floor(\plotnumofactualtype/2) + 1/2*mod(\plotnumofactualtype,2)},
+                box extend=0.25
+              },
+              legend style={
+                cells={anchor=west},
+                legend image code/.code={\draw[#1] (0cm,-0.1cm) -- (0.3cm,-0.1cm);}
+              },
+              xtick={0.25,0.75,1.25,1.75,2.25,2.75,3.25,3.75,4.25},
+              xticklabels={%
+                {MoR},%
+                {MoR-Median},%
+                {MoR-TM10},%
+                {MoR-HQ1},%
+                {MoR-HQ2},%
+                {MoR-HSK2},%
+                {MoR-HSK5},%
+                {MoR-Huber},%
+                {MoR-Myriad}%
+              },
+              x tick label style={rotate=90},
+              yticklabel style={
+                /pgf/number format/fixed,
+                /pgf/number format/precision=3,
+                /pgf/number format/fixed zerofill
+              },
+              scaled y ticks=false,
+              ticklabel style={font=\large}
+            ]
+
+              \draw[dashed, line width=2pt, black]
+                (axis cs:0,1.02) --
+                (axis cs:50,1.02)
+                node[pos=1, anchor=west, font=\large]{\textcolor{red}{Reference}};
+
+              \draw[dashed, line width=3pt, black]
+                (axis cs:0,0.09) --
+                (axis cs:50,0.09)
+                node[pos=1, anchor=west, font=\large]{\textcolor{red}{Reference}};
+
+              \node[anchor=south west, font=\large] at (axis cs:4,1.02) {\textbf{\LARGE $\epsilon = 2\%$}};
+              \node[anchor=south west, font=\large] at (axis cs:4,1.05) {\textbf{\LARGE $\epsilon = 5\%$}};
+
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=MoR]{boxplots/boxplot_erdos_renyi_md50rho_9_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=Median]{boxplots/boxplot_erdos_renyi_md50rho_9_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=TM.10]{boxplots/boxplot_erdos_renyi_md50rho_9_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=HQ1]{boxplots/boxplot_erdos_renyi_md50rho_9_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=HQ2]{boxplots/boxplot_erdos_renyi_md50rho_9_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=HSK2]{boxplots/boxplot_erdos_renyi_md50rho_9_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=HSK5]{boxplots/boxplot_erdos_renyi_md50rho_9_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=Huber]{boxplots/boxplot_erdos_renyi_md50rho_9_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=Myriad]{boxplots/boxplot_erdos_renyi_md50rho_9_no_noise.dat};
+
+            \end{axis}
+          \end{tikzpicture}%
+        }
+      \end{minipage}
+      &
+      \begin{minipage}{\linewidth}
+        \resizebox{1.00\textwidth}{!}{%
+          \begin{tikzpicture}
+            \begin{axis}[
+              scale=0.65,
+              grid=major,
+              title=\text{\Large $\rho=10\%$},
+              ylabel=\text{\Large $\hat{\rho}$},
+              boxplot/draw direction=y,
+              boxplot={
+                draw position={1/4 + floor(\plotnumofactualtype/2) + 1/2*mod(\plotnumofactualtype,2)},
+                box extend=0.25
+              },
+              legend style={
+                cells={anchor=west},
+                legend image code/.code={\draw[#1] (0cm,-0.1cm) -- (0.3cm,-0.1cm);}
+              },
+              xtick={0.25,0.75,1.25,1.75,2.25,2.75,3.25,3.75,4.25},
+              xticklabels={%
+                {MoR},%
+                {MoR-Median},%
+                {MoR-TM10},%
+                {MoR-HQ1},%
+                {MoR-HQ2},%
+                {MoR-HSK2},%
+                {MoR-HSK5},%
+                {MoR-Huber},%
+                {MoR-Myriad}%
+              },
+              x tick label style={rotate=90},
+              yticklabel style={
+                /pgf/number format/fixed,
+                /pgf/number format/precision=3,
+                /pgf/number format/fixed zerofill
+              },
+              scaled y ticks=false,
+              ticklabel style={font=\large}
+            ]
+
+              \draw[dashed, line width=2pt, black]
+                (axis cs:0,1.02) --
+                (axis cs:50,1.02)
+                node[pos=1, anchor=west, font=\large]{\textcolor{red}{Reference}};
+
+              \draw[dashed, line width=3pt, black]
+                (axis cs:0,0.1) --
+                (axis cs:50,0.1)
+                node[pos=1, anchor=west, font=\large]{\textcolor{red}{Reference}};
+
+              \node[anchor=south west, font=\large] at (axis cs:4,1.02) {\textbf{\LARGE $\epsilon = 2\%$}};
+              \node[anchor=south west, font=\large] at (axis cs:4,1.05) {\textbf{\LARGE $\epsilon = 5\%$}};
+
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=MoR]{boxplots/boxplot_erdos_renyi_md50rho_10_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=Median]{boxplots/boxplot_erdos_renyi_md50rho_10_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=TM.10]{boxplots/boxplot_erdos_renyi_md50rho_10_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=HQ1]{boxplots/boxplot_erdos_renyi_md50rho_10_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=HQ2]{boxplots/boxplot_erdos_renyi_md50rho_10_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=HSK2]{boxplots/boxplot_erdos_renyi_md50rho_10_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=HSK5]{boxplots/boxplot_erdos_renyi_md50rho_10_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=Huber]{boxplots/boxplot_erdos_renyi_md50rho_10_no_noise.dat};
+              \addplot[line width=3.00pt, mycolor2]
+                table[y=Myriad]{boxplots/boxplot_erdos_renyi_md50rho_10_no_noise.dat};
+
+            \end{axis}
+          \end{tikzpicture}%
+        }
+      \end{minipage}
+    \end{tabular}%
+  }
+
+  \caption{Erdős–Rényi ($\mu=50$). Boxplots yielded by robust MoR-type methods in scenarios without contamination for different prevalence levels.}\label{fig:box_ER_no_noise_MoR}
+\end{figure}
